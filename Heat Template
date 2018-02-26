@@ -19,7 +19,7 @@ echo "__gerrit_branch__" > /opt/config/gerrit_branch.txt
 echo "__cloud_env__" > /opt/config/cloud_env.txt
 
 # Download and run install script
-curl -k __nexus_repo__/org.openecomp.demo/boot/__artifacts_version__/mso_install.sh
+curl -k __nexus_repo__/org.openecomp.demo/boot/__artifacts_version__/mso_install.sh -o /opt/mso_install.sh
 cd /opt
 chmod +x mso_install.sh
 ./mso_install.sh
