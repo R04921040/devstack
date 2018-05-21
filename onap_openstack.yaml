@@ -266,7 +266,7 @@ resources:
     type: OS::Nova::Server
     properties:
       image: { get_param: ubuntu_1404_image }
-      flavor: { get_param: flavor_small }
+      flavor: { get_param: flavor_medium }
       name: 
         str_replace:
           template: base-dns-server
